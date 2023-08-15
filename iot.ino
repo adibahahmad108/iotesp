@@ -28,8 +28,8 @@ int pinValue = param.asInt();
     pixels.setPixelColor(2, 0xcc0000);
     pixels.setPixelColor(3, 0xcc0000);
     pixels.setPixelColor(4, 0xcc0000);
-    pixels.show();
-    pixels.show();
+    servo1();
+    servo2();
 
   }
 }
@@ -59,9 +59,8 @@ void Timer1_TimerEvent()
 
 BLYNK_WRITE(V4)
 {
-int pinValue = param.asInt();
-  if (pinValue == 1) {
-    digitalWrite(13,HIGH);
+servo;
+     digitalWrite(13,HIGH);
     digitalWrite(14,LOW);
     analogWrite(25,250);
     digitalWrite(18,HIGH);
@@ -114,7 +113,6 @@ int pinValue = param.asInt();
 
   } else {
     digitalWrite(13,LOW);
-    digitalWrite(14,HIGH);
     analogWrite(25,0);
     digitalWrite(18,HIGH);
     digitalWrite(19,LOW);
@@ -125,7 +123,6 @@ int pinValue = param.asInt();
 
 BLYNK_WRITE(V7)
 {
-int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,HIGH);
     digitalWrite(14,LOW);
