@@ -140,7 +140,7 @@ int pinValue = param.asInt();
     analogWrite(25,0);
     digitalWrite(18,LOW);
     digitalWrite(19,HIGH);
-    analogWrite(15,0);
+    ;
 
   }
 }
@@ -172,13 +172,12 @@ int pinValue = param.asInt();
 void setup() {
   Serial.begin(9600);
   Blynk.begin(auth, ssid, pass);
-  pixels.begin();
-
+ 
   pinMode(39, INPUT);
   Timer1.setInterval(300, Timer1_TimerEvent);
 
   pinMode(13,OUTPUT);
- pinMode(14,OUTPUT);
+ pinMode(18,OUTPUT);
  pinMode(25,OUTPUT);
   pinMode(18,OUTPUT);
  pinMode(19,OUTPUT);
