@@ -62,8 +62,8 @@ BLYNK_WRITE(V4)
 servo;
      digitalWrite(13,HIGH);
     digitalWrite(14,LOW);
-    analogWrite(25,250);
-    digitalWrite(18,HIGH);
+    analogWrite(30,250);
+    digitalWrite(40,HIGH);
     digitalWrite(19,LOW);
     analogWrite(15,250);
 
