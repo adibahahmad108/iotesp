@@ -180,6 +180,7 @@ void setup() {
  pinMode(19,OUTPUT);
  pinMode(15,OUTPUT);
   servo_25.attach(25);
+  nak tambah motor;
 }
 
 void loop() {
