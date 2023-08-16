@@ -19,11 +19,11 @@ char pass[] = "dee100884";
 #include <Adafruit_NeoPixel.h>
  Adafruit_NeoPixel pixels = Adafruit_NeoPixel(5, 4, NEO_GRB + NEO_KHZ800);
 
-BLYNK_WRITE(V0)
+BLYNK_WRITE(V2)
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
-    pixels.setPixelColor(0, 0xcc0000);
+
     pixels.setPixelColor(1, 0xcc0000);
     pixels.setPixelColor(2, 0xcc0000);
     pixels.setPixelColor(3, 0xcc0000);
